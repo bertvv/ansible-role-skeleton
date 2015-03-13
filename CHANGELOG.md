@@ -8,7 +8,7 @@ This file adheres to the guidelines of [http://keepachangelog.com/](http://keepa
 
 First release!
 
-# Added
+### Added
 
 - FEATURE
 
