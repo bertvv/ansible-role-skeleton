@@ -25,14 +25,15 @@ See the [test playbook](tests/test.yml)
 
 ## Testing
 
-The `tests` directory contains acceptance tests for this role in the form of a Vagrant environment. The directory `tests/roles/NAME` is a symbolic link that should point to the root of this project in order to work. To create it, do
+The `tests` directory contains tests for this role in the form of a Vagrant environment. The directory `tests/roles/NAME` is a symbolic link that should point to the root of this project in order to work. To create it, do
 
 ```ShellSession
 $ cd tests/
+$ mkdir roles
 $ ln -frs ../../PROJECT_DIR roles/NAME
 ```
 
-You may want to change the base box into one that you like. The current one is based on Box-Cutter's [CentOS Packer template](https://github.com/box-cutter/centos-vm).
+You may want to change the base box into one that you like. The current one is based on Box-Cutter's [CentOS Packer template](https://github.com/boxcutter/centos).
 
 The playbook [`test.yml`](tests/test.yml) applies the role to a VM, setting role variables.
 
