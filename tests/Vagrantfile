@@ -2,7 +2,7 @@
 
 require 'rbconfig'
 
-ROLE_NAME = 'NAME'
+ROLE_NAME = 'ROLENAME'
 HOST_NAME = 'test' + ROLE_NAME
 VAGRANTFILE_API_VERSION = '2'
 

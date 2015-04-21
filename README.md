@@ -1,4 +1,4 @@
-# Ansible role `NAME`
+# Ansible role `ROLENAME`
 
 An Ansible role for PURPOSE. Specifically, the responsibilities of this role are to:
 
@@ -25,12 +25,12 @@ See the [test playbook](tests/test.yml)
 
 ## Testing
 
-The `tests` directory contains tests for this role in the form of a Vagrant environment. The directory `tests/roles/NAME` is a symbolic link that should point to the root of this project in order to work. To create it, do
+The `tests` directory contains tests for this role in the form of a Vagrant environment. The directory `tests/roles/ROLENAME` is a symbolic link that should point to the root of this project in order to work. To create it, do
 
 ```ShellSession
 $ cd tests/
 $ mkdir roles
-$ ln -frs ../../PROJECT_DIR roles/NAME
+$ ln -frs ../../PROJECT_DIR roles/ROLENAME
 ```
 
 You may want to change the base box into one that you like. The current one is based on Box-Cutter's [CentOS Packer template](https://github.com/boxcutter/centos).
