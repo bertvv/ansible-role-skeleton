@@ -1,4 +1,16 @@
 # roles/ROLENAME/tasks/main.yml
 ---
 
+- name: Install packages
+  yum:
+    pkg: "{{ item }}"
+    state: installed
+  with_items: ROLENAME_packages
+  tags: ROLENAME
 
+- name: Ensure service is started
+  service:
+    name: "{{ ROLENAME_service }}"
+    state: started
+    enabled: true
+  tags: ROLENAME
