@@ -1,4 +1,7 @@
 # roles/ROLENAME/vars/main.yml
 ---
 
+ROLENAME_packages:
+  - ROLENAME
 
+ROLENAME_service:
