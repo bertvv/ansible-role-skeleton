@@ -3,10 +3,5 @@
 
 - name: restart ROLENAME
   service:
-    name: ROLENAME
-    state: restarted
-
-- name: restart firewalld
-  service:
-    name: firewalld
+    name: ROLENAMEd
     state: restarted
