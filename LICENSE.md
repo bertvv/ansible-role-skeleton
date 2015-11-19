@@ -1,6 +1,6 @@
 # BSD License
 
-Copyright (c) 2014, Bert Van Vreckem, (bert.vanvreckem@gmail.com)
+Copyright (c) YEAR, Bert Van Vreckem, (bert.vanvreckem@gmail.com)
 
 All rights reserved.
 
