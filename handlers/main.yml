@@ -3,5 +3,5 @@
 
 - name: restart ROLENAME
   service:
-    name: ROLENAMEd
+    name: "{{ ROLENAME_service }}"
     state: restarted
