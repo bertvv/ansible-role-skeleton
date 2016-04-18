@@ -7,8 +7,7 @@ HOST_NAME = 'test' + ROLE_NAME
 VAGRANTFILE_API_VERSION = '2'
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = 'centos71-nocm'
-  config.vm.box_url = 'https://tinfbo2.hogent.be/pub/vm/centos71-nocm-1.0.16.box'
+  config.vm.box = 'bertvv/centos72'
 
   config.vm.define HOST_NAME do |node|
     node.vm.hostname = HOST_NAME
