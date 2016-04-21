@@ -5,7 +5,7 @@
   yum:
     pkg: "{{ item }}"
     state: installed
-  with_items: ROLENAME_packages
+  with_items: "{{ ROLENAME_packages }}"
   tags: ROLENAME
 
 - name: Ensure service is started
