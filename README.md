@@ -32,7 +32,7 @@ Tests for this role are provided in the form of a Vagrant environment that is ke
 3. `cd tests/`
 4. `vagrant up` will then create a VM and apply a test playbook (`test.yml`).
 
-You may want to change the base box into one that you like. The current one, [bertvv/centos71](https://atlas.hashicorp.com/bertvv/boxes/centos71) was generated using a Packer template from the [Boxcutter project](https://github.com/boxcutter/centos) with a few modifications.
+You may want to change the base box into one that you like. The current one, [bertvv/centos72](https://atlas.hashicorp.com/bertvv/boxes/centos72) was generated using a Packer template from the [Boxcutter project](https://github.com/boxcutter/centos) with a few modifications.
 
 ## Contributing
 
