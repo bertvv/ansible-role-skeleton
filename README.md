@@ -40,9 +40,9 @@ Issues, feature requests, ideas are appreciated and can be posted in the Issues 
 
 ## License
 
-BSD
+2-clause BSD license, see [LICENSE.md](LICENSE.md)
 
-## Author Information
+## Contributors
 
-Bert Van Vreckem (bert.vanvreckem@gmail.com)
+- [Bert Van Vreckem](https://github.com/bertvv/) (maintainer:)
 
