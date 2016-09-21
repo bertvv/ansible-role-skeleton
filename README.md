@@ -11,9 +11,9 @@ No specific requirements
 ## Role Variables
 
 
-| Variable   | Required | Default | Comments (type)  |
-| :---       | :---     | :---    | :---             |
-| `role_var` | no       | -       | (scalar) PURPOSE |
+| Variable   | Default | Comments (type)  |
+| :---       | :---    | :---             |
+| `role_var` | -       | (scalar) PURPOSE |
 
 ## Dependencies
 
@@ -21,7 +21,7 @@ No dependencies.
 
 ## Example Playbook
 
-See the [test playbook](tests/test.yml)
+See the [test playbook](https://github.com/bertvv/ansible-role-ROLENAME/blob/tests/test.yml)
 
 ## Testing
 
@@ -44,5 +44,5 @@ Issues, feature requests, ideas are appreciated and can be posted in the Issues 
 
 ## Contributors
 
-- [Bert Van Vreckem](https://github.com/bertvv/) (maintainer:)
+- [Bert Van Vreckem](https://github.com/bertvv/) (maintainer)
 
