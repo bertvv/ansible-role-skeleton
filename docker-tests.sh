@@ -23,7 +23,7 @@ IFS=$'\t\n'   # Split on newlines and tabs (but not on spaces)
 
 readonly container_id="$(mktemp)"
 readonly role_dir='/etc/ansible/roles/role_under_test'
-readonly test_playbook="${role_dir}/tests/test.yml"
+readonly test_playbook="${role_dir}/docker-tests/test.yml"
 
 readonly docker_image="bertvv/ansible-testing"
 
