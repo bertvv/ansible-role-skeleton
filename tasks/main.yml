@@ -8,8 +8,8 @@
   tags: ROLENAME
 
 - name: Install packages
-  yum:
-    pkg: "{{ item }}"
+  package:
+    name: "{{ item }}"
     state: installed
   with_items: "{{ ROLENAME_packages }}"
   tags: ROLENAME
