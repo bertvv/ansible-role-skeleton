@@ -105,17 +105,19 @@ get_container_id() {
 #
 # Prints the IP address of the specified container.
 get_container_ip() {
-  local container_id="${1}"
+  local id
+  id="$(get_docker_id)"
 
   docker inspect \
     --format '{{ .NetworkSettings.IPAddress }}' \
-    "${container_id}"
+    "${id}"
 }
 
 # Usage: exec_container COMMAND
 #
 # Run COMMAND on the Docker container
 exec_container() {
+  local id
   id="$(get_container_id)"
 
   set -x
@@ -160,6 +162,7 @@ run_idempotence_test() {
 
 cleanup() {
   log 'Cleaning up'
+  local id
   id="$(get_container_id)"
 
   docker stop "${id}"
