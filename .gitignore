@@ -12,5 +12,9 @@
 # Compiled Python
 *.pyc
 
+# Ignore roles downloaded from Ansible Galaxy
+roles/*.*
+
 # Test directories. These are Git worktrees to separate test branches
-*-tests/
+*tests/
+
