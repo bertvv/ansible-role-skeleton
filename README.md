@@ -34,7 +34,7 @@ There are two types of test environments available. One powered by Vagrant, anot
 
 Issues, feature requests, ideas are appreciated and can be posted in the Issues section.
 
-Pull requests are also very welcome. The best way to submit a PR is by first creating a fork of this Github project, then creating a topic branch for the suggested change and pushing that branch to your own fork. Github can then easily create a PR based on that branch.
+Pull requests are also very welcome. The best way to submit a PR is by first creating a fork of this Github project, then creating a topic branch for the suggested change and pushing that branch to your own fork. Github can then easily create a PR based on that branch. Don't forget to add your name to the contributor list below!
 
 ## License
 
