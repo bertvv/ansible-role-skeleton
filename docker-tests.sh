@@ -55,6 +55,7 @@ main() {
   configure_environment
 
   start_container
+  show_env_info
 
   run_syntax_check
   run_test_playbook
@@ -79,12 +80,11 @@ configure_environment() {
     centos_6)
       run_opts+=('--volume=/sys/fs/cgroup:/sys/fs/cgroup:ro')
       ;;
-    centos_7|fedora_*)
+    centos_[78]|fedora_*)
       init=/usr/lib/systemd/systemd
       run_opts+=('--volume=/sys/fs/cgroup:/sys/fs/cgroup:ro')
       ;;
     ubuntu_14.04)
-      #run_opts+=('--volume=/sys/fs/cgroup:/sys/fs/cgroup:ro')
       # Workaround for issue when the host operating system has SELinux
       if [ -x '/usr/sbin/getenforce' ]; then
         run_opts+=('--volume=/sys/fs/selinux:/sys/fs/selinux:ro')
@@ -121,6 +121,11 @@ start_container() {
     "${init}" \
     > "${container_id}"
   set +x
+}
+
+show_env_info() {
+  log "Environment info"
+  exec_container ansible --version
 }
 
 get_container_id() {
