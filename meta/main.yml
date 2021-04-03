@@ -1,6 +1,7 @@
 ---
+
 galaxy_info:
-  author: Bert Van Vreckem
+  author: bertvv
   description: PURPOSE
   license: BSD
   min_ansible_version: 2.0
