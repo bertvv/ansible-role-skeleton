@@ -21,7 +21,7 @@ No dependencies.
 
 ## Example Playbook
 
-See the test playbooks in either the [Vagrant](https://github.com/bertvv/ansible-role-ROLENAME/blob/vagrant-tests/test.yml) or [Docker](https://github.com/bertvv/ansible-role-ROLENAME/blob/docker-tests/test.yml) test environment. See the section Testing for details.
+See the test playbooks in either the [Vagrant](molecule/vagrant/converge.yml) or [Docker](molecule/default/converge.yml) test environment. See the section Testing for details.
 
 ## Testing
 
