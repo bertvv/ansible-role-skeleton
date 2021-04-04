@@ -25,10 +25,30 @@ See the test playbooks in either the [Vagrant](https://github.com/bertvv/ansible
 
 ## Testing
 
-There are two types of test environments available. One powered by Vagrant, another by Docker. The latter is suitable for running automated tests on Travis-CI. Test code is kept in separate orphan branches. For details of how to set up these test environments on your own machine, see the README files in the respective branches:
+This role can be tested using [Ansible Molecule](https://github.com/ansible-community/molecule). Two test environments are provided: one powered by Docker (default), the other by Vagrant.
 
-- Vagrant: [vagrant-tests](https://github.com/bertvv/ansible-role-ROLENAME/tree/vagrant-tests)
-- Docker: [docker-tests](https://github.com/bertvv/ansible-role-ROLENAME/tree/docker-tests)
+This Molecule configuration will:
+
+- Run Yamllint and Ansible Lint
+- Create a Docker container named db
+- Run a syntax check
+- Apply the role with a test playbook
+- Run black-box acceptance tests with [BATS](https://github.com/sstephenson/bats)
+
+```bash
+# Start the container, apply the test playbook:
+molecule converge
+# Log in on the container
+molecule login --host HOSTNAME
+# Start the container (if necessary), run the tests and delete the container
+molecule test
+```
+
+If you want to use the Vagrant test environment, always specify this on the command-line, e.g.
+
+```bash
+molecule test -s vagrant
+```
 
 ## Contributing
 

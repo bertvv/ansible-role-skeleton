@@ -1,0 +1,8 @@
+---
+# Remark: Common variables are defined in `group_vars/all.yml`
+
+- name: Converge
+  hosts: all
+
+  roles:
+    - role: "{{ lookup('env', 'MOLECULE_PROJECT_DIRECTORY') | basename }}"

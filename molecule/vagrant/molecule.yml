@@ -1,0 +1,26 @@
+---
+dependency:
+  name: galaxy
+
+driver:
+  name: vagrant
+  provider:
+    name: virtualbox
+
+lint: |
+  yamllint .
+  ansible-lint -v .
+
+platforms:
+  - name: testvm
+    box: bento/centos-7
+    interfaces:
+      - network_name: private_network
+        auto_config: true
+        ip: "192.168.56.7"
+
+provisioner:
+  name: ansible
+
+verifier:
+  name: ansible
